@@ -14,7 +14,7 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index.js?v=[chunkhash]',
-		publicPath: process.env.PUBLIC_PATH || '/',
+		publicPath: '/blocks-game/',
 	},
 	resolve: {
 		extensions: ['.ts', '.js'],
@@ -26,9 +26,8 @@ const config = {
 	devServer: {
 		compress: true,
 		contentBase: path.join(__dirname, 'dist'),
-		historyApiFallback: { index: '/' },
 		host: '0.0.0.0',
-		openPage: 'http://localhost:8080',
+		openPage: 'http://localhost:8080/blocks-game/',
 	},
 	module: {
 		rules: [
