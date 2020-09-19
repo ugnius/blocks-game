@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' >
+	<meta name="theme-color" content="#000000">
+	<title>Blocks game</title>
+</head>
+<body>
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background-color: grey;
+			display: flex;
+			justify-content: center;
+		}
+		#main-canvas {
+			position: absolute;
+		}
+		.button {
+			position: absolute;
+			font: 40px Roboto bold;
+			background: #eee;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+		}
+		.button-move-left {
+			left: 20px;
+			bottom: 20px;
+		}
+		.button-move-right {
+			right: 20px;
+			bottom: 20px;
+		}
+		.button-move-down {
+			right: 80px;
+			bottom: 20px;
+		}
+		.button-rotate-left {
+			left: 20px;
+			bottom: 80px;
+		}
+		.button-rotate-right {
+			right: 20px;
+			bottom: 80px;
+		}
+		@media (any-hover: hover) {
+			.button {
+				display: none;
+			}
+		}
+	</style>
+	<canvas id="main-canvas"></canvas>
+	<div class="button button-move-left">⬅</div>
+	<div class="button button-move-right">➡</div>
+	<div class="button button-move-down">⬇</div>
+	<div class="button button-rotate-right">↩</div>
+	<div class="button button-rotate-left">↪</div>
+</body>
+</html>

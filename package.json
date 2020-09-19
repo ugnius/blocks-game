@@ -1,0 +1,35 @@
+{
+  "name": "blocks-game",
+  "version": "1.0.0",
+  "description": "Simple game using canvas 2D",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ugnius Kavaliauskas",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.0.4",
+    "json-loader": "^0.5.7",
+    "raw-loader": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {}
+}
