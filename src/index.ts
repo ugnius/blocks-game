@@ -70,12 +70,3 @@ function tick() {
 
 	window.requestAnimationFrame(tick)
 }
-
-
-function nukeEvent(event: Event) {
-	event.preventDefault && event.preventDefault();
-	event.stopPropagation && event.stopPropagation();
-	event.cancelBubble = true;
-	event.returnValue = false;
-	return false;
-}
