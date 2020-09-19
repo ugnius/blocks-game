@@ -3,7 +3,7 @@ import { addJoystickCLickListener, useButtonForAction } from './helpers'
 import { IScreen } from './IScreen'
 import { WelcomeScreen } from './screens/WelcomeScreen'
 
-console.info('Blocks game by Ugnius Kavaliauskas 2020')
+console.info('Blocks game by Ugnius Kavaliauskas 2020 https://github.com/ugnius/blocks-game')
 let canvas: HTMLCanvasElement
 let context: CanvasRenderingContext2D
 
