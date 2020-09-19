@@ -3,7 +3,7 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "start_url": "/",
+  "start_url": "/blocks-game/",
   "icons": [
 		{
 			"src": "icon-192.png",
