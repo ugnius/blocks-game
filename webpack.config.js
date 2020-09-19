@@ -14,7 +14,7 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index.js?v=[chunkhash]',
-		publicPath: '/',
+		publicPath: process.env.PUBLIC_PATH || '/',
 	},
 	resolve: {
 		extensions: ['.ts', '.js'],
